@@ -10,12 +10,18 @@ Thank Project: Springer
 $ npm install --save keyframes-spring
 ```
 
+or
+
+```js
+<script src="https://unpkg.com/keyframes-spring@0.1.2/umd/index.js"></script>
+```
+
 ## Only a function
 
 ```js
-import kfs from 'keyframes-spring';
+import keyframesSpring from 'keyframes-spring';
 
-kfs(
+keyframesSpring(
   'move',
   0.5,
   0.5,
