@@ -1,5 +1,5 @@
 {
-  "name": "keyframes-spring",
+  "name": "vanilla-spring",
   "version": "0.1.2",
   "main": "umd/index.js",
   "types": "umd/index.d.ts",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ymzuiku/keyframes-spring.git"
+    "url": "git+https://github.com/ymzuiku/vanilla-spring.git"
   },
   "bugs": {
-    "url": "git+https://github.com/ymzuiku/keyframes-spring.git"
+    "url": "git+https://github.com/ymzuiku/vanilla-spring.git"
   },
-  "homepage": "git+https://github.com/ymzuiku/keyframes-spring.git"
+  "homepage": "git+https://github.com/ymzuiku/vanilla-spring.git"
 }

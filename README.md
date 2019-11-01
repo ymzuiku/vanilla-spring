@@ -1,4 +1,6 @@
-# keyframesSpring
+# vanilla-spring
+
+Use keyframes run spring animation.
 
 Tiny, gzip: 0.4kb, run every(Vanilla, React, Vue...) project.
 
@@ -19,17 +21,17 @@ or
 ## Only a function
 
 ```js
-import keyframesSpring from 'keyframes-spring';
+import vanillaSpring from 'vanilla-spring';
 
-keyframesSpring(
-  'move',
-  0.5,
-  0.5,
-  v => `
-  transform: translateX(${100 * v}px);
-  opacity: ${v};
-`,
-);
+vanillaSpring({
+  name:'move',
+  makeReverse: true,
+  keyframe: v=> `
+    transform: translateX(${100 * v}px);
+    opacity: ${v};
+  `,
+})
+
 
 const view = document.getElementById('view');
 view.style.animation = 'move 1s';

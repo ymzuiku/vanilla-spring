@@ -1,4 +1,13 @@
 import { Springer } from './Springer';
-declare function keyframesSpring(name: string, tension: number | undefined, wobble: number | undefined, fn: (value: number) => string): void;
-export { Springer };
-export default keyframesSpring;
+export interface IVanillaSpringOptions {
+    name: string;
+    tension?: number;
+    wobble?: number;
+    makeReverse?: boolean;
+    keyframe: (value: number) => string;
+}
+declare function vanillaSpring(options: IVanillaSpringOptions): void;
+declare namespace vanillaSpring {
+    var Springer: typeof Springer;
+}
+export default vanillaSpring;

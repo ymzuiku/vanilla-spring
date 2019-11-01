@@ -37,7 +37,7 @@ const watchOptions = [
     output: {
       file: './umd/index.js',
       format: 'umd',
-      name: 'keyframesSpring',
+      name: 'vanillaSpring',
       sourcemap: true,
       globals: {
         // immer: 'immer',
