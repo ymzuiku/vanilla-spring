@@ -1,6 +1,6 @@
 {
   "name": "vanilla-spring",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "main": "umd/index.js",
   "types": "umd/index.d.ts",
   "private": false,
@@ -8,10 +8,10 @@
     "lib": "node rollup.config.js"
   },
   "devDependencies": {
-    "rollup": "^1.24.0",
-    "rollup-plugin-typescript2": "^0.24.3",
-    "rollup-plugin-uglify": "^6.0.3",
-    "typescript": "3.5.2"
+    "rollup": "^2.0.2",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^3.8.3"
   },
   "repository": {
     "type": "git",

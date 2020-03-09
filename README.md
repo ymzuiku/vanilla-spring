@@ -15,7 +15,7 @@ $ npm install --save keyframes-spring
 or
 
 ```js
-<script src="https://unpkg.com/keyframes-spring@0.1.2/umd/index.js"></script>
+<script src="https://unpkg.com/keyframes-spring@1.0.0/umd/index.js"></script>
 ```
 
 ## Only a function
