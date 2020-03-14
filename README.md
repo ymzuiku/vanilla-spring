@@ -9,13 +9,13 @@ Thank Project: Springer
 ## Install
 
 ```sh
-$ npm install --save keyframes-spring
+$ npm install --save vanilla-spring
 ```
 
 or
 
 ```js
-<script src="https://unpkg.com/keyframes-spring@1.0.0/umd/index.js"></script>
+<script src="https://unpkg.com/vanilla-spring@1.0.0/umd/index.js"></script>
 ```
 
 ## Only a function
