@@ -3,7 +3,9 @@ import { Springer } from './Springer';
 
 export interface IVanillaSpringOptions {
   name: string;
+  /** default: 0.5 */
   tension?: number;
+  /** default: 0.5 */
   wobble?: number;
   makeReverse?: boolean;
   keyframe: (value: number) => string;
