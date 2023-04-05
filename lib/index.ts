@@ -1,5 +1,5 @@
-import { keyframesSpring } from './keyframesSpring';
-import { Springer } from './Springer';
+import { keyframesSpring } from "./keyframesSpring";
+import { Springer } from "./Springer";
 
 export interface IVanillaSpringOptions {
   name: string;
@@ -11,7 +11,12 @@ export interface IVanillaSpringOptions {
   keyframe: (value: number) => string;
 }
 
+const isSSR = typeof window === "undefined";
+
 function vanillaSpring(options: IVanillaSpringOptions) {
+  if (isSSR) {
+    return;
+  }
   const { name, tension = 0.5, wobble = 0.5, makeReverse, keyframe } = options;
   const id = `__keyframes_${name}`;
 
@@ -19,12 +24,11 @@ function vanillaSpring(options: IVanillaSpringOptions) {
     return;
   }
 
-  const cssNode = document.createElement('style');
+  const cssNode = document.createElement("style");
   const css = keyframesSpring(name, tension, wobble, makeReverse, keyframe);
 
   cssNode.id = id;
   cssNode.textContent = css;
-  cssNode.type = 'text/css';
 
   document.head.appendChild(cssNode);
 }
